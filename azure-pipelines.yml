@@ -13,7 +13,7 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'ARMPipeline-conn'
+    azureResourceManagerConnection: 'armcon'
     subscriptionId: '4ff95b93-ed4e-4c99-8003-ae8cabcdc39a'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'ishii-test-rg'
