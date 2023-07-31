@@ -13,13 +13,13 @@ steps:
 - task: AzureResourceManagerTemplateDeployment@3
   inputs:
     deploymentScope: 'Resource Group'
-    azureResourceManagerConnection: 'armcon'
+    azureResourceManagerConnection: 'ishii-ARMPipeline'
     subscriptionId: '4ff95b93-ed4e-4c99-8003-ae8cabcdc39a'
     action: 'Create Or Update Resource Group'
     resourceGroupName: 'ishii-test-rg'
     location: 'East US'
     templateLocation: 'URL of the file'
-    csmFileLink: 'https://raw.githubusercontent.com/ishii-miki/testARMPipeline-repo/main/test_web_app/ishii_azuredeploy.json?token=GHSAT0AAAAAACFW5ZZKDS2VOTUUATL64KTYZGHI2UQ'
+    csmFileLink: 'https://raw.githubusercontent.com/ishii-miki/testARMPipeline-repo/main/test_web_app/ishii_azuredeploy.json?token=GHSAT0AAAAAACFW5ZZK3T4ZNWOGG76UGAESZGHJYYQ'
     csmParametersFileLink: 'https://raw.githubusercontent.com/ishii-miki/testARMPipeline-repo/main/test_web_app/ishii_azuredeploy.parameters.json?token=GHSAT0AAAAAACFW5ZZK6KSI6CKPA73DIDE4ZGHI3BQ'
     deploymentMode: 'Incremental'
     deploymentName: 'ishiiDeployPipelineTemplate'
