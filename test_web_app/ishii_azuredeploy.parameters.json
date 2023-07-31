@@ -4,8 +4,7 @@
     "parameters": {
         "testParam":{
             "value":{
-                "testSKU": "Basic",
-                "ACRname": "ishiiTestContainerRegistry2"
+                "testSKU": "Basic"
             }
         }
     }

@@ -9,7 +9,7 @@
     "variables": {},
     "resources": [
         {
-            "name": "[parameters('testParam').ACRname]",
+            "name": "ishiiTestContainerRegistry",
             "type": "Microsoft.ContainerRegistry/registries",
             "apiVersion": "2019-05-01",
             "location": "[resourceGroup().location]",
